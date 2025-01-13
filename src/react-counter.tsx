@@ -3,8 +3,20 @@
 import React from 'react'
 
 function Counter() {
-    // Your code goes here
-    return (<></>)
+    
+    const [count, setCount] = useState(0);
+
+    
+    const increase = () => {
+        setCount(prevCount => prevCount + 1);
+    };
+
+    
+    const decrease = () => {
+        setCount(prevCount => prevCount - 1);
+    };
+
+    return ();
 }
 
 export default Counter
